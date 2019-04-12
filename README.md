@@ -8,20 +8,20 @@ OrderedList_inArraySlots.java
 based on [solutionsHolmes/5D_genericTypes/OrderedList_inArraySlots_v2/](https://github.com/stuyvesant-cs/solutionsHolmes/tree/master/5D_genericTypes/OrderedList_inArraySlots_v2)
 as of 2019-04-10 04:48
 
-# 0. state the problem
+0. state the problem
 Find the index of a given number in an ordered arrayList.
 
-# 1. recursive abstraction
+1. recursive abstraction
 When I'm asked to find the index of a given number in an ordered arrayList, the recursive abstraction can find the index of a given number in half of the original arrayList.
 
-# 2. identify
-a. decision of whether to go to b. or c.
-	if (low > hi)
-b. solution to the base case
-	return -1;
-c. solutions to the recursive case
-	1) combine (N/A)
-	2) recursive abstraction
-		indexOf_recursive( findMe, low, pageToCheck - 1);
-		indexOf_recursive( findMe, pageToCheck + 1, hi);
-	3) leftover (N/A)
+2. identify
+* decision of whether to go to b. or c.
+	`if (low > hi)`
+* solution to the base case
+	`return -1;`
+* solutions to the recursive case
+1) combine (N/A)
+2) recursive abstraction
+		`indexOf_recursive( findMe, low, pageToCheck - 1);`
+		`indexOf_recursive( findMe, pageToCheck + 1, hi);`
+3) leftover (N/A)
